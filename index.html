@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday ASWITHA!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="animated">🎉 Happy Birthday ASWITHA! 🎂</h1>
+    <p class="message">Wishing you a day filled with love, laughter, and unforgettable moments.</p>
+    
+    <button onclick="showMessage()">Click for Surprise 🎁</button>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+      <div class="mySlides fade"><img src="./images/ASWITHA - 9 .jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/ASWITHA -1.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/ASWITHA - 3 .jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/ASWITHA - 4.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/ASWITHA - 5.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/ASWITHA - 2.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/ASWITHA -6 .jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/ASWITHA - 7.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/ASWITHA - 8.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/ASWITHA - 11.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/ASWITHA -10.jpg" class="slide-img"></div>
+      <div class="mySlides fade"><img src="./images/ASWITHA - 12 .jpg" class="slide-img"></div
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div class="dots-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+      <span class="dot" onclick="currentSlide(12)"></span>
+    </div>
+
+    <a href="surprise.html" class="surprise-link">Click here for a secret message ❤️</a>
+  </div>
+
+  <!-- Music Overlay -->
+  <div id="music-overlay" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255);z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;">
+    <p style="font-size:1.5em;">Happiest Birthday to you..!</p>
+    <button onclick="startMusic()" style="padding:15px 30px;font-size:1.2em;border-radius:10px;background:#e91e63;color:#fff;border:none;cursor:pointer;">A Small Gift for uhh..</button>
+  </div>
+
+  <!-- Autoplay Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="./song.mp4/gundellona.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

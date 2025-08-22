@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>From the Heart 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="message-box">
+    <h1>Dear Talli,</h1>
+    <p>
+      On this special day, I just want to say how much you mean to me. ❤️<br><br>
+Happy birthday bangaru talli.. 🫀🫶.... The date 28/08/2018 is unforgottable and most important day in my life 🖇.. Which shows me what the real love iss.. ❤‍🔥🫂.. I know that im the black mark in your life.... But thank you for your unconditional love.. 🖇🫀🫶.. Hope when you hear my name.. Absolutely you had that feel in your heart.. I can't be the best for you..nenu asalu prema kuda chupinchalekapoya... But I'm really sorry bangaram.. 🥹🤌. . 
+Miss you talli.. 👑🫂🥹
+Jagrata.. Once again happy birthday my dear bangaram.. 🫀. .. Aunty jagrata.. Manchi ga settle avali.. God bless you bangaram ✨🦋🫀🫂<br><br>
+      With all my love,<br>
+      <strong>— Bobby 💕</strong>
+    </p>
+  </div>
+
+  <!-- Surprise Background Music -->
+  <audio id="surpriseMusic" autoplay loop>
+    <source src="soft_piano.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    // Fallback for autoplay restrictions
+    window.addEventListener('load', () => {
+      const music = document.getElementById("surpriseMusic");
+      const playPromise = music.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          document.addEventListener("click", () => music.play(), { once: true });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
